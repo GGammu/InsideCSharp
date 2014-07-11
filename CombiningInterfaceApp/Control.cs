@@ -1,0 +1,7 @@
+﻿
+namespace CombiningInterfaceApp
+{
+    class Control
+    {
+    }
+}
