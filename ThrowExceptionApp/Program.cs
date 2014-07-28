@@ -33,6 +33,8 @@ namespace ThrowExceptionApp
             {
                 Console.WriteLine(e.Message);
             }
+
+            Console.ReadLine();
         }
     }
 }
