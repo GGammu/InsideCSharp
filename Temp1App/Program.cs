@@ -27,10 +27,46 @@ namespace Temp1App
             return (c.temp - 32) / 9 * 5;
         }
     }
+
+    struct Fahrenheit
+    {
+        public float temp;
+
+        public Fahrenheit(float temp)
+        {
+            this.temp = temp;
+        }
+
+        public static implicit operator Fahrenheit(float temp)
+        {
+            Fahrenheit f;
+            f = new Fahrenheit(temp);
+            return (f);
+        }
+
+        public static implicit operator float(Fahrenheit f)
+        {
+            return (f.temp * 9) / 5 + 32;
+        }
+    }
+
     class Program
     {
         static void Main(string[] args)
         {
+            float t;
+
+            t = 98.6F;
+            Console.WriteLine("Setting {0} type to {1}", t.GetType(), t);
+            Console.WriteLine("CONVERSION OF {0} ({1}) TO cELSIUS = ", 
+                t.GetType(), t);
+            Console.WriteLine((Celsius)t);
+
+            Console.WriteLine();
+
+            t = 0F;
+            Console.WriteLine("Settinig {0} type to {1}", t.GetType(), t);
+
         }
     }
 }
