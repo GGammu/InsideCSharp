@@ -58,7 +58,7 @@ namespace Temp1App
 
             t = 98.6F;
             Console.WriteLine("Setting {0} type to {1}", t.GetType(), t);
-            Console.WriteLine("CONVERSION OF {0} ({1}) TO cELSIUS = ", 
+            Console.WriteLine("CONVERSION OF {0} ({1}) TO Celsius = ", 
                 t.GetType(), t);
             Console.WriteLine((Celsius)t);
 
@@ -66,7 +66,10 @@ namespace Temp1App
 
             t = 0F;
             Console.WriteLine("Settinig {0} type to {1}", t.GetType(), t);
+            Console.Write("Conversion of {0} ({1}) to Fahrenheit = ", t.GetType(), t);
+            Console.WriteLine((Fahrenheit)t);
 
+            Console.ReadLine();
         }
     }
 }

@@ -11,9 +11,9 @@ namespace FileDialogApp
     {
         //private static OpenFileDialog ofd;
 
-        //static void Main(string[] args)
-        //{
-        //    ofd = new Open
-        //}
+        static void Main(string[] args)
+        {
+            //ofd = new Open();
+        }
     }
 }
