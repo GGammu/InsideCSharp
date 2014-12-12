@@ -51,12 +51,12 @@ namespace SplitRegExApp
             //    }
             //}
 
-            //string v = "Once Upon A Time In         America";
-            //Regex o = new Regex(@"[ ]+");
-            //foreach (string ss in o.Split(v))
-            //{
-            //    Console.WriteLine(ss);
-            //}
+            string v = "Once Upon A Time In   America";
+            Regex o = new Regex(@"[ ]+");
+            foreach (string ss in o.Split(v))
+            {
+                Console.WriteLine(ss);
+            }
 
             string x = "Once Upon A Time In America";
             Regex m = new Regex("( )");
