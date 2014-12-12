@@ -19,7 +19,7 @@ namespace SimpleXML
         {
         }
 
-        /// <summary>
+        /// <summary>etst
         /// This method does someting interesting.
         /// </summary>
         public static void Foo() { }
