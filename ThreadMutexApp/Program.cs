@@ -48,6 +48,7 @@ namespace ThreadMutexApp
             Thread t2 = new Thread(worker2);
             t1.Start();
             t2.Start();
+            Console.ReadLine();
         }
     }
 }
